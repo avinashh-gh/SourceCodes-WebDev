@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Form Example</h1>
+    
+    <form action="post">
+        <div> 
+          <label for="Username">Enter your username:</label>
+          <input type="text" autofocus id="Username" name="Username" placeholder="Enter your username" required >  
+        </div>
+
+        <div>
+            <label for="Gender">Enter your Gender:</label>
+
+            <input type="radio" id="Male" name="Gender" value="Male">
+            <label for="Male">Male</label>
+
+            <input type="radio" id="Female" name="Gender" value="Female">
+            <label for="Female">Female</label>
+
+            <input type="radio" id="Other" name="Gender" value="Other">
+            <label for="Other">Other</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="Subscribe" name="Subscribe" value="Yes">
+            <label for="Subscribe">Subscribe to newsletter</label>
+        </div>
+
+        <div>
+            <label for="comment">Explain Yourself:</label> <br>
+            <textarea name="comment" id="" cols="30" rows="5"></textarea>
+        </div>
+
+        <div>
+            <label for="Country">Select your country:</label>
+            <select name="Country" id="Country">
+                <option value="" disabled selected>Select</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+            </select>
+        </div>    
+    </form>
+</body>
+</html>  
