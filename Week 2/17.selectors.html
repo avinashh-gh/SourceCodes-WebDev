@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+<style>
+
+
+    /* element selectors */
+    h1 {
+        color: rgb(85, 90, 85);
+        background-color: lightgray;
+    }
+
+
+    /* class selectors */
+    .class {
+        color: blue;
+        font-size: 20px;
+        background-color: #cac4ec;
+    }
+
+
+    /* id selectors */
+    #id {
+        color: red;
+        background-color: #f0c4c4;
+        font-size: 18px;
+    }
+
+
+    /* child selectors */
+    div > p {
+        color: purple;
+        background-color: #e0c4f0;
+        font-weight: bold;
+        font-size:20px;
+    }
+
+
+    /* descendant selectors */
+    div p { /* where-ever p tag is found under div tag this property will be applied */
+        color: darkblue;
+        background-color: #c4e0f0;
+        font-style: italic;
+    }
+
+
+    /* universal selector */
+    * {
+        padding: 10;
+        margin: 10px;
+    }
+
+
+    /* pseudo selectors */
+    a:visited {
+        font-size: 25px;
+        color: rgb(245, 147, 0);
+    
+    }
+    a:link{ /* before visiting the link */
+        color: rgb(241, 68, 68);
+    }
+    a:active { /* when the link is clicked */
+        color: rgb(0, 0, 0);
+        background-color: #f0f0f0;
+    }
+    a:hover { /* when the mouse hovers over the link */
+        color: rgb(0, 0, 255);
+        background-color: #f0f0f0;
+    }
+
+    div:hover { /* when the mouse hovers over the div */
+        color: rgb(0, 128, 0);
+        background-color: #f0f0f0;
+    }
+
+    p:first-child{ /* selects the first child of the parent tag */
+        background-color: #e76d6d;
+    }
+
+    span {
+        color: rgb(230, 226, 14);
+        background-color: #d4f0c4;
+    }
+
+
+</style>
+
+</head>
+<body>
+
+    <main>
+        <p>I'm a para tag under main tag. </p>
+        <p>I'm a second para tag under main tag.</p>
+    </main>
+
+    <h1>I am an element selector example</h1>
+
+    <p class="class">This is a paragraph with a class selector.</p>
+
+    <p id="id">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ipsam odit delectus error quas esse omnis molestiae. In, reprehenderit? Eum placeat impedit dolorem atque? Porro!</p>
+
+    <div>
+        <p>
+            This is a paragraph inside a div, demonstrating child selectors.
+        </p>
+    </div>
+
+    <a href="https://www.google.com">Head to Google</a>
+    <a href="https://www.github.com">Head to GitHub</a>
+
+
+    <!-- this is not compatible with html just an example -->
+    <span>
+        <div>
+            hi there
+        </div>
+    </span>
+</body>
+</html>
