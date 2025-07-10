@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        h1{
+            text-align: center;
+            color: blue;
+        }
+
+        .cyellow{
+            color: yellow;
+        }
+
+        .cred{
+            color: red;
+        }
+
+        .corange{
+            color: orange;
+        }
+
+        [data-x="a"]{
+            background-color:rgb(123, 228, 123);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="cyellow cred corange" data-x="a">CSS ki Specificity</h1>
+    </div>
+</body>
+</html>
