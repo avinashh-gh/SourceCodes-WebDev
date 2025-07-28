@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sizing units</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 12px;
+      }
+      .box {
+        box-sizing: border-box; /* Ensures padding and border length are included in the total width/height */
+        border: 2px solid black;
+        /* width: 1366px; */
+        width: 80vw; /* its viewport width; it'll keep your website responsive on every device; when you dont want horizontal scroll bar  */
+        height: 10vh;
+        background-color: aquamarine;
+        margin: auto; /* Centers the box horizontally */
+      }
+      .container > div {
+        font-size: 1.5em; /* 2em means 2 times of assigned   */
+        /* em ka simple matlab jitna isko milne wala tha usko itne se multipy karke display karao */
+        width: 50%; /* will take the 5% of the width of parent width */
+        border: 2px solid black;
+      }
+
+      .container > div > div {
+        width: 50%;
+        border: 2px solid blue;
+      }
+
+      .container {
+        box-sizing: border-box;
+        border: 2px solid black;
+        width: 80vw;
+        /* height: 80vh;  //80% of the viewport height  */
+        min-height: 80vh; /* Ensures the container is at least 80vh tall, can exceede further when we add more content to it */
+        margin: 23px auto;
+        /* font-size: 18px; */
+        font-size: 2rem; /* 2rem means 2 times of root element */
+        background-color: aquamarine;
+        padding: 15px;
+      }
+      .mycont {
+        box-sizing: border-box;
+        margin: 23px auto;
+        border: 2px solid black;
+        background-color: red;
+        color: white;
+        font-size: 22px;
+        /*width: 80vw;*/
+        width: 100vmin;
+        /* vmin for laptop is height and for mobile it's width */
+        /* also vh of laptop and vw of mobile is none other than vmin */
+        /* so 100vh and 100vmin is same for laptop */
+        /* and 100vw and 100vmin is same for mobile */
+
+        /* height: 100vmax; */
+        /* vmax for laptop is width and for mobile it's height */
+        /* also vw of laptop and vh of mobile is none other than vmax */
+        /* so 100vw and 100vmax is same for laptop */
+        /* and 100vh and 100vmax is same for mobile */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      This is a box with aquamarine background and black border.
+    </div>
+
+    <div class="container">
+      <div>
+        porro hic, dolores ducimus doloribus, eius ullam. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Qui temporibus mollitia itaque iure
+        ipsa. Fuga consequatur consequuntur earum adipisci natus! Impedit fugit
+        excepturi cum dignissimos asperiores maxime voluptatum libero ipsum!
+        <div>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+          aliquam maiores facilis hic animi est voluptate? Suscipit molestiae
+          veritatis aliquam?
+        </div>
+      </div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+      voluptatibus, voluptates, voluptatum, quis quisquam voluptatibus
+      voluptates voluptatum quisquam voluptatibus voluptates. Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Laudantium reprehenderit commodi
+      modi ut, ducimus officiis esse earum repellendus quod facilis. Alias quasi
+      laboriosam iste animi, possimus saepe deserunt recusandae explicabo.
+      Dolore fugit eveniet animi dolores rem vero quam expedita maxime, hic ad
+      cupiditate alias provident aspernatur aliquid eos nisi. Inventore, tenetur
+      autem. Incidunt nostrum numquam non dolorum aut fugiat, cupiditate magnam
+      vitae facere temporibus. Fugit quod, ratione earum, quas tempora a
+      deleniti aperiam veritatis modi perspiciatis veniam animi, ab dicta? Quam
+      tempora excepturi expedita perspiciatis consequuntur voluptatem unde
+      pariatur, in non facere, magni ab sequi eaque veritatis explicabo? Rerum,
+      nisi illum ratione, enim veniam rem atque reprehenderit delectus ea, quis
+      voluptates hic totam necessitatibus perspiciatis aliquam consectetur
+      veritatis! Ipsam amet quas commodi accusantium vero! Officia, harum alias
+      nostrum exercitationem neque incidunt totam? Adipisci ullam inventore
+      distinctio, nemo, fugiat laboriosam corrupti sint autem odit minima dolor
+      alias. Amet ipsam reiciendis sint voluptates fuga odio culpa ratione ut,
+      architecto quam. Velit corporis a corrupti voluptatibus eius, placeat quos
+      nostrum rerum distinctio tempora saepe repudiandae error dignissimos
+      architecto iste incidunt totam, impedit modi accusantium assumenda, alias
+      repellendus ex! Repudiandae officia perferendis quia harum est, eum ipsum
+      sunt, ea dolor quas veniam repellendus quam, excepturi et iure culpa odit.
+      Magnam temporibus quos aliquam dolorem perspiciatis quidem, quam atque
+      provident fuga numquam inventore reprehenderit vitae, dignissimos corrupti
+      hic. Blanditiis, sapiente? Laboriosam harum doloremque iusto ducimus non,
+      autem iste quis vero quae quas fuga quos vitae assumenda dolore recusandae
+      voluptas? Labore alias saepe, mollitia aliquam ut incidunt magni
+      voluptates ipsum eaque id eos consequuntur cumque obcaecati sapiente amet
+      molestiae ad tempora at. Ea quo quas suscipit temporibus pariatur odit
+      dicta, libero beatae neque, dolorem nostrum rem amet facere dolores quis!
+      Iure laboriosam quia doloribus accusamus facere consequatur. Asperiores
+      eos minima qui quod non nihil nemo, provident sed illo iure tempore
+      quibusdam voluptatibus nulla delectus sit, iste excepturi, fugit ex est
+      quas placeat! Dolore perspiciatis animi, excepturi, doloribus natus ab
+      quasi voluptatibus eos esse libero harum molestiae aut non, incidunt
+      tenetur. Fuga id quae pariatur ipsum sed minima temporibus, inventore
+      deleniti vero laboriosam ducimus quod, rem aliquam ut. Corporis
+      exercitationem reprehenderit vel facilis deleniti asperiores accusamus a
+      magnam eius odio modi fugiat nulla temporibus nostrum atque recusandae
+      placeat voluptate impedit dolorum perspiciatis, architecto quod? Id omnis
+      repellendus deleniti magnam at enim quam eaque nostrum ea officia sit,
+      ducimus deserunt tempore aspernatur quis odio fuga quod! Est fuga nulla
+      earum impedit, eveniet, ut voluptas cupiditate optio dolores ratione
+      consequuntur, ducimus atque! Vitae ad est eos perferendis asperiores
+      reiciendis harum excepturi deserunt ratione maiores eum distinctio ea
+      similique minima sapiente quis, eveniet quia, quod delectus, inventore ex
+      ullam. Ea rerum, eveniet quas recusandae, quia sapiente fugiat tenetur
+      earum voluptatum nemo deserunt incidunt vitae. Temporibus laboriosam
+      quaerat rem voluptatem modi consequuntur obcaecati exercitationem
+      doloremque ducimus ullam tenetur accusantium, magnam eveniet sit
+      voluptates, totam enim fugiat facere natus dicta ab nemo commodi! Nesciunt
+      adipisci neque excepturi eaque hic optio magnam corrupti ad, recusandae
+      eius laborum, odit fuga. Impedit error ex doloremque. Corporis provident
+      nihil, odio, recusandae nulla rem quos, exercitationem fugit a mollitia
+      culpa labore. Accusamus numquam possimus praesentium recusandae dicta
+      aspernatur harum voluptates quos. Sequi eos exercitationem possimus. Quae
+      est dicta magni saepe, facilis vel in libero, laboriosam suscipit
+      cupiditate labore pariatur, eveniet perferendis maxime distinctio. Est
+      amet atque delectus, earum eius quas laudantium odit iusto totam iste
+      illum non. Laudantium quae odit minus incidunt, at quibusdam ratione alias
+      natus ipsum rerum vel optio soluta obcaecati sit aliquam corporis dolores
+      qui esse laborum non atque porro. Asperiores nam corrupti voluptatem,
+      tempore quia dolore tenetur unde obcaecati neque error harum reprehenderit
+      officia ipsum quam optio sunt. Labore dignissimos facere maiores vero
+      veritatis voluptatem minima cumque ea maxime quasi delectus aperiam, sint
+      aliquam et atque autem sapiente harum? Fuga, explicabo eum beatae
+      provident error ipsam saepe eligendi facilis magnam amet est excepturi
+      nihil! Quis ad corrupti a totam. Culpa rerum officia incidunt maiores
+      fugiat quod minus aut maxime, possimus, repellendus nobis libero quaerat,
+      blanditiis nemo vero vitae recusandae nisi. Quia laudantium dolores ullam,
+      neque ex inventore soluta aliquam recusandae repellat, perspiciatis unde
+      eveniet aliquid repudiandae veniam velit explicabo eligendi voluptates
+      iure molestias sequi cum nesciunt. Dignissimos, cum sequi. A nostrum,
+      animi corrupti tempore nobis temporibus. Esse rem natus quasi rerum saepe
+      fugiat debitis voluptatum atque officiis placeat nihil est dicta quis,
+      quidem distinctio amet, quibusdam veniam earum quos eum ipsa dignissimos
+      non. Quia plac molestiae?
+    </div>
+
+    <div class="mycont">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+      pariatur perferendis corrupti expedita officia quod, asperiores commodi
+      obcaecati alias saepe adipisci reprehenderit odio animi! Adipisci eaque
+      libero harum quae. Consequuntur dolore quidem sequi laudantium harum.
+      Aliquam deserunt aut dignissimos vitae quidem ipsa odit totam culpa?
+    </div>
+  </body>
+</html>
+
+<!-- NOTE- html is a root element -->

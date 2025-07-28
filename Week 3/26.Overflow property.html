@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixing Overflow of Content</title>
+    <style>
+      .box {
+        width: 40vw;
+        height: 40vh;
+        border: 2px solid black;
+        /* overflow: scroll; Adds scrollbars no matter what */
+        /* overflow: auto; Adds scrollbars only when necessary */
+        /* overflow: clip; Clips the content that overflows */
+        /* overflow: hidden; Hides overflow content */
+        /* overflow-x: hidden; Hides horizontal scrollbar */
+        /* overflow-y: auto; Adds vertical scrollbar only when necessary */
+        overflow:  hidden auto; /* Hides horizontal scrollbar and adds vertical scrollbar only when necessary, it's like overflow(x,y) */
+        text-overflow: ellipsis; /* display three dots after the boundary meets */
+        /* white-space: nowrap; Prevents text from wrapping */
+      }
+    </style>
+  </head>
+  <body> 
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolor omnis
+      maiores, quam voluptatum voluptatem maxime pariatur sunt ipsum numquam?
+      Provident consequuntur quam praesentium, illum quae molestiae?
+      Perspiciatis at facere iusto magnam ea ipsum ut animi impedit dignissimos Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ut veniam quidem perspiciatis voluptatibus totam officiis unde qui odio. Fugit corrupti at eveniet quia, iure ipsam molestias velit recusandae ut praesentium expedita qui quibusdam aspernatur similique repudiandae vero provident? Ipsum non dicta omnis vel cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur, hic voluptatibus enim reprehenderit debitis, error aliquam, sunt deserunt quos a beatae saepe quas nemo ex soluta suscipit veniam doloribus nulla nostrum earum! Soluta tempora quasi at iusto laboriosam dicta sunt, sit error reprehenderit perspiciatis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam incidunt cumque adipisci nisi corrupti distinctio, repudiandae, deserunt quas aliquid minima repellendus possimus reiciendis libero hic praesentium non consequuntur. Laborum, at rerum vitae est veritatis voluptates. Quasi ipsam nemo, veniam optio quam accusamus mollitia quia?
+      veritatis officia cumque beatae odit, commodi accusamus corrupti debitis
+      suscipit voluptas.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Lists</title>
+    <style>
+        nav > ul > li {
+            background-color: yellow;
+            border: 2px solid black; /* Adds a border around the list item */
+            list-style: devanagari; /* Removes default bullet points(on none type) and adds the new one */
+            list-style-type: "🎯";
+            list-style-position: inside; /* Changes the position of the bullet point gets included with bgc */
+            /* list-style-image: url(img.jpg); Adds an image as a bullet point */
+            list-style:disc inside url('img.jpg'); /* Combines disc style with an image */
+        } 
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+        </ul>
+    </nav>
+</body>
+</html>

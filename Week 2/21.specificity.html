@@ -5,23 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Specificity</title>
     <style>
+        /* it's specificity is 1 */
         h1{
             text-align: center;
-            color: blue;
+            color: blue /* !important; */
         }
 
-        .cyellow{
+        /* it's specificity is 10 only with class but when h1 also present they adds up to 10+1=11 */
+        h1.cyellow{
             color: yellow;
         }
 
+        /* it's specificity is 10 */
         .cred{
             color: red;
         }
 
+        /* it's specificity is 10 */
         .corange{
             color: orange;
         }
 
+        /* it's specificity is 10 */
         [data-x="a"]{
             background-color:rgb(123, 228, 123);
         }
@@ -35,3 +40,7 @@
     </div>
 </body>
 </html>
+
+<!-- NOTE: when specificity is same it totally depends on the position.  -->
+
+<!-- important > inline (1000) > id's (100) > classes, attribute, pseudo-classes (10) > element, pseudo-elements (1) > universal (0) > useragent stylesheet(default) -->

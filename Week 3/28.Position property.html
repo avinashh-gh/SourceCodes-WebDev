@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Property</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .parent {
+        padding: 50px;
+        margin: 45px;
+        border: 2px solid black;
+        /* position: absolute; now every sub class is related to this */
+      }
+
+      .box {
+        height: 200px;
+        width: 80vw;
+        padding: 5px;
+        margin: 5px;
+        border: 2px solid black;
+      }
+
+      .box1 {
+        background-color: #e72121;
+        position: sticky; /* this will stick to the top of the viewport when scrolling */
+        top: 0px;;
+        height: 50px;
+        width: 1366px;
+        margin: 0;
+        padding: 0;
+        /* position: absolute;
+        top: 0px; its relative to nearest positioned ancestor 
+        left: 0px;
+        position: relative;
+        z-index: 1; This box will be on top because of this z-index */
+      }
+
+      .box2 {
+        background-color: #fcff47;
+        /* position: relative;
+        top: -75px;
+        right: -42px; */
+      }
+
+      .box3 {
+        background-color: #6aff45;
+        position: fixed; /* this will be fixed to the viewport/webpage */
+        bottom: 0px;
+        right: 137px;
+        height: 100px;
+      }
+
+      .box4 {
+        background-color: #30ffdc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+      <div class="box box4"></div>
+    </div>
+  </body>
+</html>
+
+<!-- in short -- when position is set to absolute it find it's nearest parent element which is positioned -->

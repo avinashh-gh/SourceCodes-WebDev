@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows and Outlines</title>
+    <style>
+        .box-shadow{
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            /* box-shadow: hori-offset verti-offset blur spread color inset/outset */
+        }
+
+        .text-shadow{
+            color: black;
+            text-shadow: 2px 2px 4px grey;
+            /* text-shadow: hori-offset verti-offset blur color */
+        }
+
+        .outline{
+            /* outline: width style color; */
+            outline: 2px dotted olive;
+            outline-offset: 2px; 
+            /* 
+            *its like padding but for the outline
+            *it's not same but behaves like border
+            *it can't have rounded corners
+            */
+        }
+    </style>
+</head>
+<body>
+   <div class="box-shadow">
+    I am a box with a shadow and an outline.
+   </div> 
+
+   <h1 class="text-shadow">
+    This text has a shadow effect applied to it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt velit iure sint aliquam quaerat cupiditate repudiandae totam rem aut eaque?
+   </h1>
+
+   <h3 class="outline">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quia cum, error, nobis molestiae numquam quasi amet tenetur alias expedita sit ea unde beatae nam.
+   </h3>
+</body>
+</html>
