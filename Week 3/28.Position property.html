@@ -11,6 +11,7 @@
       }
 
       .parent {
+        /* transform, filter, perspective properties can also make an element positioned */
         padding: 50px;
         margin: 45px;
         border: 2px solid black;
@@ -42,7 +43,7 @@
 
       .box2 {
         background-color: #fcff47;
-        /* position: relative;
+        /* position: relative; means now we can use top bottom property 
         top: -75px;
         right: -42px; */
       }
@@ -72,3 +73,4 @@
 </html>
 
 <!-- in short -- when position is set to absolute it find it's nearest parent element which is positioned -->
+ <!-- an element will inherit the property of its parent element if that is positioned -->

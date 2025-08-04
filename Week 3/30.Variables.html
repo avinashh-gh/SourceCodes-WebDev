@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables</title>
+    <style>
+      :root {
+        /* global variable */
+        --color: pink;
+        --seccolor: lavender;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        display: flex;
+      }
+      ul li {
+        list-style: none;
+        margin-left: 100px;
+      }
+      ul li:first-child {
+        --lcolor: orange; /* here its a local variable it will only change for this one element, its also called a overwritten value */
+        background-color: var(--lcolor);
+      }
+      .nav {
+        background-color: var(--seccolor);
+      }
+      .container {
+        background-color: var(--color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti,
+      suscipit odio. A officiis impedit modi quo temporibus sed itaque delectus
+      repellat natus cumque, vero quas repudiandae fugiat omnis deserunt dolorem
+      laboriosam ipsum eius tenetur reprehenderit quam dignissimos enim earum
+      deleniti. Iure soluta tempora quia itaque?
+    </div>
+  </body>
+</html>
+
+<!-- instead of stating a same color to every css property we can use variables and assit them all at once with that color by making an global variable -->
